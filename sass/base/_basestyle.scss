@@ -1,0 +1,100 @@
+body {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+input,
+input:hover,
+input:focus,
+input:active,
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: $fontReey;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 72px;
+}
+h3 {
+  font-size: 53px;
+}
+h4 {
+  font-size: 42px;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    width: $tablet;
+  }
+  @media screen and (min-width: 768px) {
+    width: $desktop;
+  }
+}
+.link {
+  text-decoration: none;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  @media screen and (max-width: $desktop) {
+    max-width: 70%;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 50%;
+  }
+}
+.d-flex {
+  display: flex;
+}
+
+%content-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

@@ -1,0 +1,15 @@
+.info {
+  padding: 110px 0 45px;
+  background: $accentColor;
+  color: $white;
+}
+.info-text {
+  margin: 70px 0;
+}
+.infoMore {
+  @include lightBtnMore();
+  margin: auto;
+}
+.info-food {
+  @include shadow();
+}

@@ -1,0 +1,24 @@
+.menu {
+  padding: 110px 0 45px;
+}
+.menu-offer {
+  font-size: 27px;
+  color: $primaryTextColor;
+  margin: 60px auto;
+}
+.menu-food {
+@include shadow()
+}
+.menu-block {
+  color: $primaryTextColor;
+}
+.menu-name {
+  font-size: 29px;
+}
+.menu-text {
+  font-size: 20px;
+}
+.showMore {
+  @include darkBtnMore();
+  margin: 110px auto 0;
+}
