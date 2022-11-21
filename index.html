@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />     
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container"> 
             <img class="header-img" src="./images/plate.png" alt="">      
             <div class="row">
@@ -21,16 +21,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="col-5  navbar-nav mb-2 mb-lg-0 link">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#header">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our story</a>
+                            <a class="nav-link" href="#info">Our story</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
+                            <a class="nav-link" href="#footer">Contact us</a>
                         </li>
                         </ul>
                         <form class="search-form d-flex">
@@ -44,9 +44,9 @@
                 </nav>
             </div>
             <div class="row">
-                <div class="col-2">
-                    <img class="logo" src="./images/logo.png" alt="logo">
-                </div>            
+                    <a class="col-2" href="#header">
+                        <img class="logo" src="./images/logo.png" alt="logo">
+                    </a>   
             </div> 
             <div class="row">
                 <h1 class="title">Italian food</h1>
@@ -55,14 +55,14 @@
                 <span class="second-title">Lorem ipsum dolor</span>
             </div>
             <div class="row">
-                <button class="readMore" type="submit">Read more</button>
+                <a href="#info" class="readMore">Read more</a>                
             </div>
             <div class="row">
                 <p class="col-4 title-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
         </div>
     </header>
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -116,11 +116,11 @@ consectetur  adipisicing...
                 </div>
             </div>
             <div class="row">
-                <button class="showMore" type="submit">Show more</button>
+                <a href="#" class="showMore">Show more</a>
             </div>
         </div>
     </section>
-    <section class="info">
+    <section class="info" id="info">
         <div class="container">
             <div class="row text-center">
                     <h2 class="info-title">
@@ -140,11 +140,11 @@ consectetur  adipisicing...
                 </div>
             </div>
             <div class="row">
-                <button class="infoMore" type="submit">More info</button>
+                <a class="infoMore" href="#footer">More info</a>
             </div>
         </div>
     </section>
-    <section class="promo">
+    <section class="promo" id="promo">
         <div class="container">
             <div class="row justify-around align-center">
                 <div class="col-6">
@@ -157,7 +157,7 @@ consectetur  adipisicing...
                     <p class="promo-text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                     </p>
-                    <button class="promoMore" type="submit">Show more</button>
+                    <a href="#" class="promoMore">Show more</a>
                 </div>
             </div>
             <div class="row justify-around align-center">
@@ -168,7 +168,7 @@ consectetur  adipisicing...
                     <p class="promo-text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                     </p>
-                    <button class="promoMore" type="submit">Show more</button>
+                    <a href="#" class="promoMore">Show more</a>
                 </div>
                 <div class="col-6">
                     <img class="info-food" src="./images/spagetti.png" alt="">
@@ -176,7 +176,7 @@ consectetur  adipisicing...
             </div>
         </div>        
     </section>
-    <section class="pizza">
+    <section class="pizza" id="pizza">
         <img class="leavesImg pizza-img" src="./images/leaves.png" alt="">
         <img src="./images/pizza.png" alt="" class="pizzaImg pizza-img">  
         <div class="container">
@@ -190,7 +190,7 @@ consectetur  adipisicing...
             </div>
         </div>      
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <div class="row d-flex justify-around">
                 <div class="col-4">
@@ -234,7 +234,7 @@ consectetur  adipisicing...
             </div>
         </div>
     </section>
-    <section class="subscribe text-center">
+    <section class="subscribe text-center" id="subscribe">
         <img class="subscribe-img" src="./images/leaves.png" alt="">
         <div class="container">
             <h2>
@@ -255,7 +255,7 @@ consectetur  adipisicing...
               </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
             <div class="col-5">
@@ -265,49 +265,107 @@ consectetur  adipisicing...
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.
                 </p>
-                <div class="col-2 socials d-flex justify-content-between">
-                    <div class="socials-icon">
-                        <img src="./images/Instagram.svg" alt="">
-                    </div>
-                    <div class="socials-icon">
-                        <img src="./images/Facebook.svg" alt="">
-                    </div>
-                    <div class="socials-icon">
-                        <img src="./images/Twitter.svg" alt="">
-                    </div>
-                    <div class="socials-icon">
-                        <img src="./images/WhatsApp.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-                <h5>About</h5>
-                <ul>
-                    <li>History</li>
-                    <li>Our Team</li>
-                    <li>Brand Guidelines</li>
-                    <li>Terms & Condition</li>
-                    <li>Privacy Policy</li>
+                <ul class="col-2 socials d-flex justify-content-between">
+                    <li class="socials-icon">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./images/Instagram.svg" alt="">
+                        </a>                        
+                    </li>
+                    <li class="socials-icon">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./images/Facebook.svg" alt="">
+                        </a>                        
+                    </li>
+                    <li class="socials-icon">
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img src="./images/Twitter.svg" alt="">
+                        </a>                        
+                    </li>
+                    <li class="socials-icon">
+                        <a href="https://www.whatsapp.com/" target="_blank">
+                            <img src="./images/WhatsApp.svg" alt="">
+                        </a>                        
+                    </li>
                 </ul>
             </div>
             <div class="col-2">
                 <h5>About</h5>
-                <ul>
-                    <li>History</li>
-                    <li>Our Team</li>
-                    <li>Brand Guidelines</li>
-                    <li>Terms & Condition</li>
-                    <li>Privacy Policy</li>
+                <ul  class="footer-menu">
+                    <li >
+                        <a href="#">
+                            History
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Our Team
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Brand Guidelines
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Terms & Condition
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="col-2">
-                <h5>About</h5>
-                <ul>
-                    <li>History</li>
-                    <li>Our Team</li>
-                    <li>Brand Guidelines</li>
-                    <li>Terms & Condition</li>
-                    <li>Privacy Policy</li>
+                <h5>Services</h5>
+                <ul  class="footer-menu"> 
+                    <li >
+                        <a href="#">
+                            How to Order
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Our Product
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Order Status
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Promo
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Payment Method
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h5>Other</h5>
+                <ul  class="footer-menu"> 
+                    <li >
+                        <a href="#">
+                            Contact Us 
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Help
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            Privacy
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -9,4 +9,17 @@
   height: 45px;
   border-radius: 50%;
   background: $accentColor;
+  @include transition;
+  &:focus,
+  &:hover {
+    background: $focusColor;
+  }
+}
+.footer-menu a {
+  color: $primaryTextColor;
+  @include transition;
+  &:focus,
+  &:hover {
+    color: $focusColor;
+  }
 }
