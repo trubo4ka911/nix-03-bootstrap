@@ -68,12 +68,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  @media screen and (max-width: $desktop) {
-    max-width: 70%;
-  }
-  @media screen and (max-width: $mobile) {
-    max-width: 50%;
-  }
 }
 a {
   text-decoration: none;
