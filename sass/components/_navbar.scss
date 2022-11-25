@@ -62,10 +62,21 @@
   font-size: 16px;
   color: #f9f0da;
   border-radius: 20px;
+  @include transition;
   &:focus,
   &:hover,
   &:active {
     box-shadow: none;
     background-color: $focusColor;
+    @include transition;
+  }
+}
+.nav-item {
+  text-shadow: 0 0 3px $primaryTextColor;
+  @include transition;
+  &:focus,
+  &:hover {
+    @include transition;
+    text-shadow: none;
   }
 }

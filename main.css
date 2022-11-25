@@ -116,7 +116,7 @@ a {
 
 .header-img {
   position: absolute;
-  top: 80%;
+  top: 60%;
   right: 0;
 }
 
@@ -225,10 +225,25 @@ a {
   font-size: 16px;
   color: #f9f0da;
   border-radius: 20px;
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:focus, .btn:hover, .btn:active {
   box-shadow: none;
   background-color: #adb5bd;
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item {
+  text-shadow: 0 0 3px #333d42;
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-item:focus, .nav-item:hover {
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: none;
 }
 
 .menu {
